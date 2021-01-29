@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+        <html>
+           <head>
+        <title>BMI Calculator</title>
+            
+         </head>
+         <style>
+             html{
+                text-align: -webkit-center;
 
+             }
+            *{font-family: monospace;
+            }
+            input{
+                border: 3px groove red;
+            }
+            body{   
+                 border: 5px inset red;
+                 text-align: -webkit-center;
+                 width: fit-content;
+                 padding: 30px;
+                 }
+                 i{
+                    border: 5px groove red;
+                    padding: 10px 20px 10px 20px;
+                    border-radius: 10px;
+
+                 }
+                 .red {
+                    text-align: center;
+                    /* text-decoration: underline; */
+                    /* font-size: 15px;
+                    font-family: monospace; */
+                    animation: colorRotate 2s linear 0s infinite;
+                    ;
+                    }
+
+                    @keyframes colorRotate {
+                    from {
+                        color: #c70000;
+                        text-shadow: 0 0 1px #000000, 0 0 3px #000000a4 ;
+                    }
+                    10% {
+                        color: #0099ff;
+                        text-shadow: 0 0 1px #000000, 0 0 3px #000000a4  ;
+                    }
+                    50% {
+                        color: #00ff00;
+                        text-shadow: 0 0 1px #000000, 0 0 3px #000000a4 ;
+                    }
+                    75% {
+                        color: #ff3399;
+                        text-shadow: 0 0 1px #000000, 0 0 3px #000000a4 ;
+                    }
+                    100% {
+                        color: #6666ff;
+                        text-shadow: 0 0 1px #000000, 0 0 3px #000000a4 ;
+                    }
+                    }
+                 .black{
+
+                 }
+
+         </style>
+         <body>
+             <p>Click me => <i>User</i></p>
+        <h1>Body Mass Index Calculator</h1>
+        <p>Enter your height: <input type="text"/>
+        <input type="submit" value="computeBMI" onclick="pigIt();">
+        <p><h1>Your BMI is: <p id="output">?</p></h1></p>
+        
+        <p><h2>This means you are: <p id="comment"> ?</p> </h2> </p>
+         </body>
+         <script type="text/javascript">
+          
+            function pigIt() {
+                }
+        </script>
+        </html>
