@@ -82,6 +82,19 @@ width: 100%;
     </p>
 
 </body>
+<script type="text/javascript">
 
+    function pigIt() {
+        let output = document.querySelector("#output");
+        let boringText = document.querySelector("#boringText").value;
+
+        let regex = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g;
+        let thisIsNowPig = [];
+
+        boringText.split(' ').map(x => regex.test(x) ? thisIsNowPig.push(x) : thisIsNowPig.push(x.split('').splice(1, x.length).join('') + `${x[0]}ay`));
+        output.innerHTML = thisIsNowPig.join(' ');
+        output.className='red'
+    }
+</script>
 
 </html>
